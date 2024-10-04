@@ -22,6 +22,15 @@
     width: 100%;
     height: 100%;
 }
+/* aside */
+.TopSubCover {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(51, 50, 54, 0.2);
+}
 .TopSub {
     width: 100%;
     height: 100%;
@@ -29,7 +38,7 @@
     font-size: 14px;
     font-weight: 600;
     max-width: 1360px;
-    margin: 0 auto;
+    margin: 0 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -38,12 +47,118 @@
     margin: 0 10px;
     color: rgb(51, 50, 54, 0.2);
 }
- 
-.TopSubCover {
+
+
+
+/* header */
+
+.header {
     width: 100%;
-    height: 40px;
+    height: 70px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     border-bottom: 1px solid rgb(51, 50, 54, 0.2);
+}
+
+.Gnb {
+    width: 100%;
+    height: 100%;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 1360px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* gnb left */
+.GnbLeft {
+    display: flex;
+    align-items: center;
+}
+
+.GnbLeft .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6500C3;
+    cursor: pointer;
+}
+
+.GnbLeft .search {
+    margin-left: 30px;
+    position: relative;
+}
+
+.GnbLeft .search input {
+    height: 42px;
+    border-radius: 62px;
+    background: #fff;
+    border: #ebecee;
+    outline: 0;
+    padding: 0 10px 0 40px;
+    font-size: 16px;
+}
+.GnbLeft .search input:hover {
+    background: #ebecee;
+}
+.GnbLeft .search i {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    font-size: 16px;
+    color: #6500C3;
+}
+/* gnb right */
+.GnbList ul {
+    display: flex;
+    align-items: center;
+}
+.GnbList ul li {
+    margin-left: 24px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.GnbList ul li:hover {
+    color: #8f00ff;
+}
+.GnbList ul li:first-child {
+    margin-left: 0;
+}
+.GnbList ul li button {
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background: #8f00ff;
+    border: 2px solid #000;
+    padding: 6px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.GnbList ul li button:hover {
+    background: #6500C3;
+}
+.GnbList ul div {
+    margin-left: 24px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.GnbList ul div span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.GnbList ul div .signIn:hover {
+    color: #8f00ff;
+}
+.GnbList ul div .signUp:hover {
+    color: #8f00ff;
 }
