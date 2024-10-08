@@ -180,8 +180,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
 }
-#main .part1 h1 {
+#main .part1 .part1Cover h1 {
     font-size: 44px;
     font-weight: bold;
     text-align: center;
@@ -211,13 +212,58 @@
     border: none;
     color: gray;
 }
+#main .part1 .part1_2Cover {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+#main .part1 .part1_2Cover h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.part1_2ListCover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
 
 
-
-
-
-
-
+.part1_2List {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.part1_2List>div {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+.part1_2List:hover div{
+    border: 1px solid #000;
+}
+.part1_2List>div>img {
+    width: 48px;
+    height: auto;
+}
+.part1_2List>p {
+    line-height: 27px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 20px;
+    letter-spacing: -1px;
+}
 
 
 
