@@ -212,9 +212,13 @@
     border: none;
     color: gray;
 }
+
+/* part1_2 */
+
 #main .part1 .part1_2Cover {
     max-width: 1120px;
     margin: 0 auto;
+    margin-bottom: 120px;
 }
 #main .part1 .part1_2Cover h1{
     font-size: 24px;
@@ -222,12 +226,13 @@
     margin-bottom: 40px;
 }
 
+
+
 .part1_2ListCover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 40px;
 }
-
 
 .part1_2List {
     width: 100%;
@@ -265,15 +270,115 @@
     letter-spacing: -1px;
 }
 
+/* part1_3 */
 
+.part1_3Cover {
+    max-width: 1120px;
+    margin: 0 auto;
+    /* margin-bottom: 120px; */
+}
 
+.part1_3Cover h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 
+.part1_3ListCover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 17px;
+}
+.part1_3List {
+    width: 100%;
+    height: 207px;
+    padding-left: 30px;
+    border-radius: 20px;
+    background: #e8f7fe;
+    background-image: url("../img/part1_3/list1bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all 0.3s;
+}
+.part1_3List h2 {
+    margin-top: 28px;
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #188ba7;
+}
+.part1_3List:hover {
+    border: 1.5px solid #188ba7;
+    transition: all 0.3s;
+}
 
+.part1_3List2 {
+    background: #f5edff;
+    background-image: url("../img/part1_3/list2bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part1_3List2 h2 {
+    color: #6500c2;
+}
+.part1_3List2:hover{
+    border: 1.5px solid #6500c2;
+    transition: all 0.3s;
+}
+.part1_3List3 {
+    background: #fef8e8;
+    background-image: url("../img/part1_3/list3bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part1_3List3 h2 {
+    color: #ff9100; 
+}
+.part1_3List3:hover {
+    border: 1.5px solid #ff9100;
+    transition: all 0.3s;
+}
 
+.part1_3List4 {
+    background: #fef8e8;
+    background-image: url("../img/part1_3/list4bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part1_3List4 h2 {
+    color: #ff9100;
+}
+.part1_3List4:hover {
+    border: 1.5px solid #ff9100;
+    transition: all 0.3s;
+}
 
-
-
-
+.part1_3List p {
+    margin-top: 4px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333236;
+    letter-spacing: -1px;
+}
+.part1_3List .imgCover {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 24px;
+    bottom: 30px;
+}
+.part1_3List .imgCover img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
