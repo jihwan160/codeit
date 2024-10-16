@@ -801,32 +801,128 @@
     height: auto;
 }
 
+/* part5 */
+.part5 {
 
+}
 
+.part5 .part5Cover {
+    max-width: 1120px;
+    margin: 0 auto;
+}
 
+.part5 .part5Cover .part5Content {
+    padding: 120px 0;
+}
+.part5 .part5Cover .part5Content .part5Title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.part5 .part5Cover .part5Content .part5Title>p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #8f00ff;
+    margin-bottom: 4px;
+}
 
+.part5 .part5Cover .part5Content .part5Title>h2 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #333236;
+}
 
+.part5 .part5Cover .part5Content .part5Interview {
 
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 56px;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList:last-child {
+    margin-bottom: 0;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .interviewDesc {
+    padding: 32px;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .interviewDesc>p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #8f00ff;
+    margin-bottom: 4px;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .interviewDesc>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #333236;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .interviewDesc>div {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: gray;
+    margin-top: 8px;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImgCover {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    cursor: pointer;
+    overflow: hidden;
+}
 
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg img:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg {
+    position: relative;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg .interviewMore {
+    position: absolute;
+    right: -24px;
+    bottom: 24px;
+    z-index: 3;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px 8px 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(51, 50, 54, 0.2);
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.2);
+    overflow: inherit !important;
+    cursor: pointer;
+}
 
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg .interviewMore>div {
+    font-size: 16px;
+    line-height: 27px;
+    font-family: "Nanum Gothic", sans-serif;
+    margin-right: 4px;
+    color: #333236cc;
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg .interviewMore>span>i {
+    font-size: 16px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg .interviewMore:hover div{
+    color: rgb(51, 50, 54, 1);
+}
+.part5 .part5Cover .part5Content .part5Interview .part5InterviewList .imterviewImg .interviewMore:hover {
+    color: rgb(51, 50, 54, 1);
+}
 
 
 
