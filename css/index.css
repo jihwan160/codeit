@@ -924,29 +924,96 @@
     color: rgb(51, 50, 54, 1);
 }
 
+/* part6 */
+.part6 {
+
+}
+
+.part6 .part6Cover {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.part6 .part6Cover .part6Content {
+    padding: 120px 0;
+}
+
+.part6 .part6Cover .part6Content .part6Title{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.part6 .part6Cover .part6Content .part6Title>p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #8f00ff;
+    margin-bottom: 4px;
+}
+
+.part6 .part6Cover .part6Content .part6Title>h2{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #333236;
+}
+
+.part6 .part6Cover .part6Content .part6Img {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 32px 30px;
+}
 
 
+.part6 .part6Cover .part6Content .part6Img img {
+    width: 100%;
+    height: 100%;
+}
+.part6 .part6Cover .part6Content .part6Img .myOfficeCover {
+    display: flex;
+    align-items: center;
+}
+.part6 .part6Cover .part6Content .part6Img .myOffice {
+    width: 100%;
+    background: #8f00ff;
+    border: 2px solid #333236;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    line-height: 36px;
+    padding: 12px 10px;
+}
 
+.part6 .part6Cover .part6Content .part6Img .myOffice .plus {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #ffb321;
+}
 
+.part6 .part6Cover .part6Content .part6Img .myOffice .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
 
+.part6 .part6Cover .part6Content .part6Img .myOffice .pointer {
+    position: absolute;
+    right: -14px;
+    bottom: -10px;
+    font-size: 50px;
+    color: #dff93e;
+    transform: rotate(-15deg);
+    transition: all 0.3s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.part6 .part6Cover .part6Content .part6Img .myOffice:hover .pointer {
+    right: 80px;
+    bottom: -20px;
+    transition: all 0.3s;
+}
 
 
 
