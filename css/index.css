@@ -926,7 +926,7 @@
 
 /* part6 */
 .part6 {
-
+    background: #fbfbfb;
 }
 
 .part6 .part6Cover {
@@ -1014,6 +1014,188 @@
     bottom: -20px;
     transition: all 0.3s;
 }
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid rgb(51, 50, 54, 0.1);
+}
+
+.footer .footerCover {
+    padding: 40px 27.5px 64px;
+}
+
+.footer .footerCover .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footerCover .footerContent .footerLeft {
+
+}
+
+.footer .footerCover .footerContent .footerLeft .flTop ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer .footerCover .footerContent .footerLeft .flTop ul li {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333236cc;
+    line-height: 21px;
+}
+.footer .footerCover .footerContent .footerLeft .flTop ul li span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333236;
+}
+
+.footer .footerCover .footerContent .footerLeft .flBot {
+    margin-top: 24px;
+}
+
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #33323680;
+
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p {
+    display: flex;
+    align-items: center;
+    /* gap: 6px; */
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p::before {
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    width: 1px;
+    height: 12px;
+    background: rgb(51, 50, 54, 0.5);
+}
+
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p:first-child::before {
+    width: 0;
+    margin-right: 0;
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p:first-child {
+    color: #333236;
+    font-weight: 700;
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p span {
+    line-height: 20px;
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p span:nth-child(1) {
+    font-weight: 700;
+}
+.footer .footerCover .footerContent .footerLeft .flBot .flBotCover p span:nth-child(2) {
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+/* footerRight */
+.footerRight {
+
+}
+
+.footerRight ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.footerRight ul li a{
+    width: 32px;
+    height: 32px;
+    background: rgb(51, 50, 54, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerRight ul li a img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
