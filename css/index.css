@@ -1127,22 +1127,79 @@
     height: 20px;
 }
 
+/* BotSub */
+
+.BotSubCover {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
 
 
+.freeStart {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #333236;
+    padding: 12px 40px;
+    border-radius: 100px;
+}
+.freeStart .fsLeft h2{
+    font-size: 20px;
+    color: #fff;
+    line-height: 32px;
+    font-weight: bold;
+}
 
+.freeStart .fsRight {
+    position: relative;
+}
+.freeStart .fsRight button{
+    width: 266px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333236;
+    background: #dff93e;
+    line-height: 30px;
+    padding: 12px 0 10px;
+    border: 2px solid #333236;
+    border-radius: 12px;
+    cursor: pointer;
 
+}
 
+.freeStart .fsRight span {
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    font-size: 40px;
+    color: #2dd9ca;
+    transform: rotate(-20deg);
+    transition: all 0.3s;
+}
 
+.freeStart .fsRight:hover span {
+    right: 80px;
+    bottom: -20px;
+    transition: all 0.3s;
+}
 
-
-
-
-
-
-
-
-
-
+/* sideFixed */
+.sideFixed {
+    position: fixed;
+    right: 11px;
+    bottom: 100px;
+    z-index: 5;
+}
+.sideFixed button {
+    cursor: pointer;
+}
+.sideFixed button img{
+    width: 128px;
+    height: 54px;
+}
 
 
 
