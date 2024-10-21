@@ -164,6 +164,17 @@
 .GnbList ul div .signUp:hover {
     color: #8f00ff;
 }
+
+.headerFixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 9;
+}
+
+
 /* main */
 /* part1 */
 
