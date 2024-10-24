@@ -28,10 +28,62 @@ window.addEventListener('scroll',function(){
 }) 
 
 
+// 메인 input 글자 애니메이션
 
+const inputElement = document.querySelector('#mainInput');
+const words = ['코딩 기초','파이썬','데이터 분석','프론트엔드','백엔드'];
 
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+let delay = 0
+let typingInterval;
 
+function typeEffect() {
+    const currentWord = words[wordIndex];
 
+    if (deleting === true) {
+        charIndex--;
+        inputElement.value = currentWord.substring(0,charIndex);
+
+        if (charIndex === 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }else {
+        charIndex++;
+        inputElement.value = currentWord.substring(0,charIndex);
+
+        if (charIndex === currentWord.length) {
+            if(delay === 0) {
+                delay = 500;
+                setTimeout(() => {
+                    deleting = true;
+                    delay = 0
+                }, delay);
+            }
+        }
+    }
+}
+
+function startTyping() {
+    typingInterval = setInterval(typeEffect,deleting ? 100 : 60);
+}
+
+inputElement.addEventListener('click',function(){
+    if(typingInterval) {
+        clearInterval(typingInterval);
+        typingInterval = null;
+    }
+})
+
+document.addEventListener('click',(event)=>{
+    if(!typingInterval && event.target !== inputElement) {
+        startTyping();
+    }
+})
+
+startTyping();
 
 
 

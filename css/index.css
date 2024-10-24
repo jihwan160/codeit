@@ -181,9 +181,6 @@
 /* main */
 /* part1 */
 
-#main {
-
-}
 
 #main .part1 {
     padding: 100px 32px;
@@ -223,11 +220,14 @@
     height: 100%;
     border: 1px solid #000;
     outline: 0;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
     margin-left: 20px;
     border: none;
     color: gray;
 }
+
+
 
 /* part1_2 */
 
