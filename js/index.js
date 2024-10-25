@@ -87,6 +87,44 @@ startTyping();
 
 
 
+let isAnimating = false;
+const rollingNums = document.querySelectorAll('#rollingNum');
+
+function startRollingNum (element, targetNum) {
+    let currentNumber = 0;
+    let cycleNumber = 0;
+
+    const interval = setInterval(()=>{
+        element.textContent = currentNumber;
+
+        if(currentNumber === 9) {
+            cycleNumber++;
+        }
+
+        if(cycleNumber > 0 && currentNumber === targetNum) {
+            clearInterval(interval);
+        } else {
+            currentNumber = (currentNumber + 1) % 10;
+        }
+    }, 100)
+}
+
+
+window.onscroll = () => {
+    if(!isAnimating) {
+        isAnimating = true;
+
+        rollingNums.forEach(rollingNum => {
+            const targetNum = parseInt(rollingNum.getAttribute("data-target"));
+            startRollingNum(rollingNum, targetNum);
+        })
+
+        setTimeout(() => {
+            isAnimating = false;
+        }, 2000);
+    }
+}
+
 
 
 

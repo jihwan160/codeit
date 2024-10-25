@@ -726,6 +726,19 @@
     line-height: 27px;
     color: #e9ccff;
 }
+.part3 .part3Cover .part3Content .part3Desc .DescRight ul li:first-child p {
+    margin-bottom: 10px;
+}
+.part3 .part3Cover .part3Content .part3Desc .DescRight ul li:nth-child(2) p:nth-child(2) ,
+.part3 .part3Cover .part3Content .part3Desc .DescRight ul li:nth-child(3) p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.part3 .part3Cover .part3Content .part3Desc .DescRight #rollingNum {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
 
 .part3 .part3Cover .part3Content .part3Desc .DescRight .numTitle {
     font-size: 20px;
