@@ -1,5 +1,6 @@
 
 window.addEventListener('scroll',function(){
+    // 스크롤시 헤더 고정
     let header = document.querySelector('.header');
     let scrollPosition = window.scrollY;
     
@@ -86,7 +87,7 @@ document.addEventListener('click',(event)=>{
 startTyping();
 
 
-
+// 숫자 스크롤링
 let isAnimating = false;
 const rollingNums = document.querySelectorAll('#rollingNum');
 
@@ -126,5 +127,33 @@ window.onscroll = () => {
 }
 
 
+// 비디오 재생 멈춤 버튼
+const video = document.querySelector('#video');
+const videoBtn = document.querySelector('#videoBtn');
 
+video.muted = true;
+video.autoplay = true;
+video.loop = true;
+
+video.addEventListener('click', ()=>{
+    if(video.paused) {
+        video.muted = false;
+        video.play();
+        videoBtn.classList.replace('fa-circle-play', 'fa-circle-pause');
+    }else {
+        video.pause();
+        videoBtn.classList.replace('fa-circle-pause', 'fa-circle-play');
+    }
+})
+
+videoBtn.addEventListener('click', ()=>{
+    if(video.paused) {
+        video.muted = false;
+        video.play();
+        videoBtn.classList.replace('fa-circle-play', 'fa-circle-pause');
+    } else {
+        video.pause();
+        videoBtn.classList.replace('fa-circle-pause', 'fa-circle-play');
+    }
+})
 

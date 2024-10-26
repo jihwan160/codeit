@@ -677,6 +677,22 @@
     height: 100%;
 }
 
+.part3 .part3Cover .part3Content .videoArea #videoBtn {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.part3 .part3Cover .part3Content .videoArea #videoBtn:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
 #dlatl {
     position: absolute;
     z-index: 5;
