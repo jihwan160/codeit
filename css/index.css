@@ -99,14 +99,16 @@
 .GnbLeft .search input {
     height: 42px;
     border-radius: 62px;
-    background: #fff;
-    border: #ebecee;
+    background: #ebecee;
+    border: 1px solid #ebecee;
     outline: 0;
     padding: 0 10px 0 40px;
     font-size: 16px;
+    transition: all 0.3s;
 }
-.GnbLeft .search input:hover {
-    background: #ebecee;
+.GnbLeft .search input:focus {
+    background: #fff;
+    transition: all 0.3s;
 }
 .GnbLeft .search i {
     position: absolute;

@@ -157,3 +157,9 @@ videoBtn.addEventListener('click', ()=>{
     }
 })
 
+
+document.querySelectorAll('a[href="#"]').forEach(function(link){
+    link.addEventListener('click', (e)=>{
+        e.preventDefault();
+    })
+})
