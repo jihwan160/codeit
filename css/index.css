@@ -73,7 +73,6 @@
     font-size: 14px;
     font-weight: 600;
     max-width: 1360px;
-    margin: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +82,9 @@
     display: flex;
     align-items: center;
 }
-
+.GnbLeft .pcNO {
+    display: none;
+}
 .GnbLeft .logo {
     font-size: 24px;
     font-weight: bold;
@@ -848,7 +849,7 @@
 
 /* part5 */
 .part5 {
-
+    padding: 120px 32px;
 }
 
 .part5 .part5Cover {
@@ -856,9 +857,6 @@
     margin: 0 auto;
 }
 
-.part5 .part5Cover .part5Content {
-    padding: 120px 0;
-}
 .part5 .part5Cover .part5Content .part5Title {
     text-align: center;
     margin-bottom: 80px;
@@ -1254,13 +1252,68 @@
 }
 
 
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+@media screen and (max-width:1200px) {
+    .TopSubCover {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgb(51, 50, 54, 0.2);
+        
+    }
+    
+    .Gnb {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0 32px;
+    }
+    /* gnb left */
+    .GnbLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .GnbLeft .search {
+        margin-left: 0;
+    }
+    .GnbLeft .search i {
+        font-size: 24px;
+        position: static;
+        cursor: pointer;
+    }
+    .GnbLeft .search input {
+        display: none;
+    }
+    .GnbLeft .pcNO {
+        display: block;
+        
+        cursor: pointer;
+    }
+    .GnbLeft .pcNO p {
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .GnbList {
+        display: none;
+    }
+}
 
 
 
-
-
-
-
+@media screen and (max-width:767px) {
+    
+}
 
 
 
