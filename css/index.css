@@ -249,7 +249,7 @@
 
 .part1_2ListCover {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,88px);
     gap: 40px;
 }
 
@@ -268,6 +268,7 @@
     border: 1px solid #fff;
     border-radius: 12px;
     transition: all 0.3s;
+    margin-top: 20px;
 }
 .part1_2List:hover div{
     border: 1px solid #000;
@@ -313,7 +314,7 @@
     height: 207px;
     padding-left: 30px;
     border-radius: 20px;
-    background: #e8f7fe;
+    background: #e8f7f2;
     background-image: url("../img/part1_3/list1bg.png");
     background-position: 50%;
     background-repeat: no-repeat;
@@ -327,7 +328,7 @@
     margin-top: 28px;
     line-height: 28px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: bold;
     color: #188ba7;
 }
 .part1_3List:hover {
@@ -1173,15 +1174,15 @@
 /* BotSub */
 
 .BotSubCover {
-    position: fixed;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-
 .freeStart {
+    position: fixed;
+    bottom: 25px;
+    z-index: 5;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -1306,6 +1307,26 @@
     }
     .GnbList {
         display: none;
+    }
+
+    /* part1_3 */
+    .part1_3ListCover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 17px;
+    }
+    .part1_3List {
+        height: 172px;
+        background-image: url('../img/part1_3/1200list1bg.png');
+    }
+    .part1_3List2 {
+        background-image: url('../img/part1_3/1200list2bg.png');
+    }
+    .part1_3List3 {
+        background-image: url('../img/part1_3/1200list3bg.png');
+    }
+    .part1_3List4 {
+        background-image: url('../img/part1_3/1200list4bg.png');
     }
 }
 
