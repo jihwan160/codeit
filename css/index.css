@@ -76,6 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 20px;
 }
 /* gnb left */
 .GnbLeft {
@@ -100,7 +101,7 @@
 .GnbLeft .search input {
     height: 42px;
     border-radius: 62px;
-    background: #ebecee;
+    background: #fff;
     border: 1px solid #ebecee;
     outline: 0;
     padding: 0 10px 0 40px;
@@ -110,6 +111,9 @@
 .GnbLeft .search input:focus {
     background: #fff;
     transition: all 0.3s;
+}
+.GnbLeft .search input:hover {
+    background: #ebecee;
 }
 .GnbLeft .search i {
     position: absolute;
