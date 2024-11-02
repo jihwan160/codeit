@@ -1261,6 +1261,9 @@
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+#tabBar {
+    display: none;
+}
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
@@ -1494,6 +1497,44 @@
     .footer .footerCover .footerContent .footerRight ul {
         justify-content: center;
         margin-top: 32px;
+    }
+
+    .footer .footerCover {
+        padding: 0px 27.5px 120px;
+    }
+
+    .BotSubCover .freeStart{
+        bottom: 56px;
+    }
+
+    #tabBar {
+        width: 100%;
+        height: 56px;
+        background: #fff;
+        display: block;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 5;
+        border-top: 1px solid #dddee4;
+    }
+    #tabBar ul {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #tabBar ul li {
+        text-align: center;
+    }
+    #tabBar ul li i {
+        font-size: 20px;
+        color: #333236;
+    }
+    #tabBar ul li p {
+        padding-top: 6px;
+        font-size: 11px;
+        color: #333236;
     }
 }
 
