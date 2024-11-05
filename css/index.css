@@ -250,7 +250,6 @@
 }
 
 
-
 .part1_2ListCover {
     display: grid;
     grid-template-columns: repeat(auto-fit,88px);
@@ -259,12 +258,11 @@
 
 .part1_2List {
     width: 100%;
-    height: 88px;
+    height: 100%;
     position: relative;
     cursor: pointer;
-    margin-top: 20px;
 }
-.part1_2List>div {
+.part1_2List .part1_2Img {
     width: 100%;
     height: 100%;
     display: flex;
@@ -273,25 +271,27 @@
     border: 1px solid #fff;
     border-radius: 12px;
     transition: all 0.3s;
-    
+    aspect-ratio: 1;
 }
-.part1_2List:hover div{
+.part1_2List .subCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.part1_2List .subCover:hover .part1_2Img{
     border: 1px solid #000;
 }
-.part1_2List>div>img {
+.part1_2List .part1_2Img img {
     width: 48px;
     height: auto;
 }
-.part1_2List>p {
+.part1_2List .subCover p {
     line-height: 27px;
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 20px;
     letter-spacing: -1px;
 }
 
@@ -1575,6 +1575,9 @@
     }
 
     /* part1_2 */
+    #main .part1 .part1_2Cover {
+        margin-bottom: 64px;
+    }
     #main .part1 .part1_2Cover h1 {
         font-size: 20px;
         margin-bottom: 20px;
@@ -1583,30 +1586,26 @@
         display: grid;
         grid-template-columns: repeat(auto-fit,56px);
         gap: 15px;
-        row-gap: 32px;
         justify-content: space-between;
     }
-    .part1_2List {
-        height: 56px;
-        margin-top: 0;
-    }
-    .part1_2List>p {
+    .part1_2List .subCover p {
         width: 100%;
         line-height: 17px;
         font-size: 11px;
         letter-spacing: -0.3px;
         white-space: normal;
         word-break: keep-all;
-        position: static;
-        transform: translateX(0);
-        padding-top: 0px;
     }
+    .part1_2List .part1_2Img img {
+        width: 36px;
+    }
+
+
+    /* part1_3 */
     #main .part1 .part1_3Cover h1 {
         font-size: 20px;
         margin-bottom: 20px;
     }
-
-    /* part1_3 */
     .part1_3List .imgCover {
         width: 44px;
         height: 44px;
