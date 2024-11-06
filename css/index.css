@@ -1100,7 +1100,9 @@
 .footer .footerCover .footerContent .footerLeft .flTop ul {
     display: flex;
     align-items: center;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 4px;
 }
 
 .footer .footerCover .footerContent .footerLeft .flTop ul li {
@@ -1126,10 +1128,10 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 6px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     color: #33323680;
-
+    letter-spacing: -0.6px;
 }
 .footer .footerCover .footerContent .footerLeft .flBot .flBotCover p {
     display: flex;
@@ -1326,7 +1328,14 @@
         display: none;
     }
 
+    #main {
+        padding-bottom: 56px;
+    }
+
     /* part1_3 */
+    #main .part1 {
+        padding: 48px 32px 0;
+    }
     .part1_3ListCover {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1385,6 +1394,9 @@
     }
 
     /* part2-2 */
+    .part2 {
+        padding: 80px 32px;
+    }
     .part2_2 .contentCover {
         display: block;
     }
@@ -1423,6 +1435,7 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
+        padding: 80px 32px;
     }
     .part3 .part3Cover .part3Content .videoArea {
         max-width: 800px;
@@ -1481,6 +1494,9 @@
         grid-row: 4;
         grid-column: 2;
     }
+    .part6 .part6Cover .part6Content {
+        padding: 80px 32px;
+    }
 
 
     /* footer */
@@ -1505,8 +1521,9 @@
     }
 
     .footer .footerCover {
-        padding: 0px 27.5px 120px;
+        padding: 40px 27.5px 120px;
     }
+    
 
     .BotSubCover .freeStart{
         bottom: 56px;
@@ -1596,19 +1613,27 @@
         white-space: normal;
         word-break: keep-all;
     }
+    .part1_2List .part1_2Img {
+        background: #f6f6f8;
+    }
     .part1_2List .part1_2Img img {
         width: 36px;
     }
 
 
     /* part1_3 */
+    
     #main .part1 .part1_3Cover h1 {
         font-size: 20px;
         margin-bottom: 20px;
     }
+    .part1_3List {
+        padding-left: 17px;
+    }
     .part1_3List .imgCover {
         width: 44px;
         height: 44px;
+        bottom: 0;
     }
     .part1_3List {
         height: 113px;
@@ -1675,6 +1700,7 @@
     .part2_1Top .TopRight .TRTitle>h2 {
         font-size: 18px;
         line-height: 30px;
+        word-break: keep-all;
     }
     .part2_1Top .TopRight .TRTitle>p {
         font-size: 12px;
@@ -1766,6 +1792,9 @@
     .part2_2 .contentCover .content .contentImg4 {
         background-image: url('../img/part2_2/767img4.png');
     }
+    .part2_1Bot .BotTitle {
+        width: auto;
+    }
 
     /* part3 */
     .part3 .part3Cover .part3Content {
@@ -1790,9 +1819,14 @@
     .part3 .part3Cover .part3Content .part3Desc .DescRight #rollingNum {
         font-size: 38px;
     }
+    .part3 .part3Cover .part3Content .part3Desc .DescRight .numTitle {
+        font-size: 16px;
+    }
     .part3 .part3Cover .part3Content .part3Desc .DescRight ul {
         justify-content: space-between;
+        gap: 16px;
     }
+    
 
     /* part4 */
     .part4 .part4Cover .part4Content {
@@ -1809,6 +1843,7 @@
     .part4 .part4Cover .part4Content .part4Study {
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        gap: 14px;
     }
     .part4 .part4Cover .part4Content .part4Study img:nth-child(1),
     .part4 .part4Cover .part4Content .part4Study img:nth-child(3) {
@@ -1842,6 +1877,7 @@
     .part5 .part5Cover .part5Content .part5Title>h2 {
         font-size: 24px;
         line-height: 36px;
+        word-break: keep-all;
     }
     .part5 .part5Cover .part5Content .part5Title {
         margin-bottom: 56px;
@@ -1891,7 +1927,7 @@
         line-height: 36px;
     }
     .part6 .part6Cover .part6Content .part6Img .myOffice .name {
-        font-size: 16px;
+        font-size: 14px;
     }
     .part6 .part6Cover .part6Content .part6Img .myOffice {
         padding: 10px 0 9px 0;
@@ -1899,12 +1935,15 @@
     }
     .part6 .part6Cover .part6Content .part6Img .myOffice .plus {
         margin-right: 4px;
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .part6 .part6Cover .part6Content .part6Img .myOffice:hover .pointer {
+        right: 40px;
     }
 
     /* BotSubCover */
     .freeStart {
-        width: calc(100% - 20px);
+        width: calc(100% - 2px);
         gap: 4px;
         padding: 12px 15px;
         border-radius: 16px;
